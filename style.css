@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.cont{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1.2rem 1fr;
+}
+
+.colorbar{
+    background-color: rgb(111, 0, 255);
+}
+
+
+.container{
+    display: grid;
+    grid-template-rows: 12rem minmax(100vh,min-content) 100vh;    
+}
+
+.header{
+    /* background-color: #aaa; */
+    padding: 0 9rem;
+}
+
+.header-logo{
+    margin-right: auto;
+}
+
+.header-heading{    
+    font-size: 2.8rem;
+    margin: 0.2rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-heading2{ 
+    font-weight: normal;   
+    font-size: 1.8rem;
+    color: #666;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-btn{
+    background: transparent;
+    font-size: 1.5rem;
+    color: #666;
+    margin: 0 2rem;
+}
+
+.header-btn2{
+    background: rgb(111, 0, 255);;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 2rem;
+    padding: 1.5rem 2.8rem;
+    border-radius: 3.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* main view  */
+
+.main-view{
+    padding: 0 9rem;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 5rem;
+}
+
+.main-left{
+    width: 100%;
+    height: 100%;
+    /* background-color: beige; */
+}
+
+.main-right{
+    width: 100%;
+    height: 100%;    
+}
+
+.main-img{
+    float: right;
+}
+
+.main-heading{
+    font-size: 5rem;
+    color: #222;
+    margin: 0.5rem 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-paragraph{
+    font-size: 1.7rem;
+    color: #666;
+    margin: 2rem 0;
+    line-height: 2.8rem;
+    margin-right: 8rem;
+}
+
+.main-heading2{
+    font-size: 1.5rem;
+    color: blue;
+    margin-top: 4rem;
+    font-weight: bold;
+}
+
+.main-heading3{
+    font-size: 1.8rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.main-podcast-btn{
+    height: 6rem;
+    width: 18rem;
+}
