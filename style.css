@@ -37,12 +37,12 @@ html{
 
 .container{
     display: grid;
-    grid-template-rows: 12rem minmax(100vh,min-content) 100vh;    
+    grid-template-rows: 12rem minmax(100vh,min-content) minmax(100vh,min-content);    
 }
 
 .header{
     /* background-color: #aaa; */
-    padding: 0 9rem;
+    padding: 0 7%;
 }
 
 .header-logo{
@@ -70,7 +70,7 @@ html{
 }
 
 .header-btn2{
-    background: rgb(111, 0, 255);;
+    background: rgb(111, 0, 255);
     font-size: 1.6rem;
     color: white;
     margin: 0 2rem;
@@ -89,16 +89,16 @@ html{
 /* main view  */
 
 .main-view{
-    padding: 0 9rem;
+    padding: 0 7%;
     box-sizing: border-box;
     display: flex;
     padding-top: 5rem;
+    z-index: 1;
 }
 
 .main-left{
     width: 100%;
     height: 100%;
-    /* background-color: beige; */
 }
 
 .main-right{
@@ -141,4 +141,154 @@ html{
 .main-podcast-btn{
     height: 6rem;
     width: 18rem;
+}
+
+
+
+
+
+/* cards container */
+
+.cards-container{
+    background-color: rgb(220, 230, 241);
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem 6%;
+    
+
+}
+
+.Style-div{
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    background-color: transparent;
+    z-index: 0;
+    top: -17rem;
+    left: 0;
+    overflow: hidden;
+}
+
+.hidder{
+    position: relative;
+    width: 150%;
+    height: 200%;
+    transform: rotate(-5deg);
+    background-color: rgb(220, 230, 241);
+    top: 4rem;
+}
+
+.card-container-heading-main{
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+    color: #222;
+    margin: 0.5rem 0;
+    margin-bottom: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cards-container2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,35rem);
+    grid-gap: 3.5rem;
+    
+}
+
+.card{
+    background-color: white;
+    height: 40rem;
+    display: grid;
+    grid-template-rows: 18rem 1fr;
+    box-shadow: 0.8rem 0.8rem 1rem -0.8rem #aaa;
+}
+
+.Card-img-cont{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.692);
+    height: 4rem;
+    width: 8rem;
+}
+
+.tage-style{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(111, 0, 255);
+}
+
+.card-style-para2{
+    font-size: 1.4rem;
+    color: #888;
+    margin: 2rem 4rem;
+}
+
+.card-style-para{
+    margin-left: 4rem;
+    font-size: 2.4rem;
+    color: #222;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 2rem;
+}
+
+.card-style-para2-btn{
+    font-size: 1.4rem;
+    color: #888;
+    background: transparent;
+}
+
+.speacial-card{
+    position: relative;
+    background-color: #333;
+    height: 40rem;
+    box-shadow: 0.8rem 0.8rem 1rem -0.8rem #aaa;
+}
+
+.card-top-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background: rgb(111, 0, 255);
+}
+
+.card-center-div{
+    width: 85%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 4.5rem;
+}
+
+.speacial-card-heading{
+    font-size: 2.8rem;
+    color: white;
+    margin: 0.5rem 0;
+    margin-bottom: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.speacial-card-para{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.speacial-div-btn{
+    width: 100%;
+    background-color: rgb(111, 0, 255);
+    color: white;
+    font-size: 1.7rem;
+    height: 4.5rem;
+    border-radius: 1rem;
 }
