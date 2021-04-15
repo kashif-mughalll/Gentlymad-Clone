@@ -41,9 +41,44 @@ html{
 }
 
 .header{
-    /* background-color: #aaa; */
     padding: 0 7%;
 }
+
+#mobile-header{
+    /* opacity: 0; */
+    display: none;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.94);
+    position: fixed;
+    z-index: 100;
+    padding: 5rem;
+    transition: opacity 0.5s;
+}
+
+
+.temp-header-btn{
+    color: white;
+    font-size: 4.2rem;
+    margin: 2.5rem;
+    background: transparent;
+    display: block;
+    transition: color 0.3s;
+}
+
+.temp-header-btn:hover{
+    color: #ccc;
+}
+
+#mob-header-btn{
+    font-size: 3.7rem;
+    color: #777;
+    transition: transform 0.25s;
+}
+
 
 .header-logo{
     margin-right: auto;
@@ -212,6 +247,7 @@ html{
 .Card-img-cont{
     position: relative;
     overflow: hidden;
+    align-items: flex-start;
 }
 
 .card-tag{
@@ -248,7 +284,9 @@ html{
     font-size: 1.4rem;
     color: #888;
     background: transparent;
+    transition: color 0.3s;
 }
+
 
 .card-imgs{
     transition: width 0.5s;
@@ -421,6 +459,15 @@ html{
 /* hovers */
 
 
+.card-style-para2-btn:hover{
+    color: #444;
+}
+
+#mob-header-btn:hover{    
+    transform: scaleY(1.25);
+}
+
+
 .footer-btns:hover{
     color: #666;
 }
@@ -513,6 +560,11 @@ html{
 
 
 @media only screen and (max-width:650px){
+
+    .header-btn{
+        display: none;
+    }
+
     .container{
         grid-template-rows: 12rem minmax(65vh,min-content) minmax(100vh,min-content) minmax(80vh,min-content) 60vh;    
     }
@@ -539,7 +591,61 @@ html{
         
     }
 
+    .input-box{
+        width: 50rem;
+    }
+
+    .input-box-btn{
+        width: 50rem;
+    }
+
+    .feeds-para{
+        font-size: 1.7rem;
+    }
+
+    
+    .feeds-heading{
+        font-size: 4.6rem;    
+    }
+
     .speacial-card{
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+
+    .container{
+        grid-template-rows: 7rem minmax(65vh,min-content) minmax(100vh,min-content) minmax(80vh,min-content) 50vh;    
+    }
+
+    .input-box{
+        width: 45rem;
+    }
+
+    .input-box-btn{
+        width: 45rem;
+    }
+
+    .feeds-para{
+        font-size: 1.5rem;
+    }
+
+    
+    .feeds-heading{
+        font-size: 4rem;    
+    }
+    
+    .header-btn2{
+        display: none;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .header{
+        justify-content: flex-start;
     }
 }
