@@ -37,7 +37,7 @@ html{
 
 .container{
     display: grid;
-    grid-template-rows: 12rem minmax(100vh,min-content) minmax(100vh,min-content);    
+    grid-template-rows: 12rem minmax(100vh,min-content) minmax(100vh,min-content) minmax(100vh,min-content) 60vh;    
 }
 
 .header{
@@ -47,6 +47,7 @@ html{
 
 .header-logo{
     margin-right: auto;
+    cursor: pointer;
 }
 
 .header-heading{    
@@ -67,16 +68,21 @@ html{
     font-size: 1.5rem;
     color: #666;
     margin: 0 2rem;
+    transition: color 0.5s;
 }
 
 .header-btn2{
+    position: relative;
+    top: 0;
     background: rgb(111, 0, 255);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
     margin: 0 2rem;
     padding: 1.5rem 2.8rem;
     border-radius: 3.5rem;
     font-weight: bold;
+    transition: top 0.4s,box-shadow 0.4s;
+
 }
 
 
@@ -141,6 +147,8 @@ html{
 .main-podcast-btn{
     height: 6rem;
     width: 18rem;
+    transition: opacity 0.2s;
+    opacity: 1;
 }
 
 
@@ -154,8 +162,6 @@ html{
     position: relative;
     box-sizing: border-box;
     padding: 1rem 6%;
-    
-
 }
 
 .Style-div{
@@ -244,6 +250,11 @@ html{
     background: transparent;
 }
 
+.card-imgs{
+    transition: width 0.5s;
+}
+
+
 .speacial-card{
     position: relative;
     background-color: #333;
@@ -285,10 +296,250 @@ html{
 }
 
 .speacial-div-btn{
+    position: relative;
+    top: 0;
     width: 100%;
     background-color: rgb(111, 0, 255);
     color: white;
     font-size: 1.7rem;
     height: 4.5rem;
     border-radius: 1rem;
+    transition: top 0.4s,box-shadow 0.4s;
+}
+
+.center-div{
+    width: 100%;
+}
+
+.view-all-btn{
+    position: relative;
+    top: 0;
+    background: rgb(111, 0, 255);
+    font-size: 1.5rem;
+    color: white;
+    margin: 5rem 2rem;
+    padding: 1.5rem 2.8rem;
+    font-weight: bold;
+    transition: top 0.4s,box-shadow 0.4s;
+}
+
+
+
+/* feeds */
+
+.feeds{
+    padding: 6rem 0;
+    background: linear-gradient(rgba(102, 102, 102, 0.85),rgba(102, 102, 102, 0.85)) , url('https://thegentlymad.com/wp-content/uploads/2018/04/bg-signup_alt2.jpg') ;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.feeds-heading{
+    font-size: 5.3rem;
+    color: white;
+}
+
+.feeds-para{
+    text-align: center;
+    font-size: 1.9rem;
+    color :#ccc;
+    margin: 4rem 0;
+    line-height: 3rem;
+
+}
+
+.input-box{
+    width: 60rem;
+    height: 6rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+}
+
+.input-box-btn{
+    width: 60rem;
+    height: 6rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    background-color: rgb(111, 0, 255);
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    transition: top 0.4s,box-shadow 0.4s;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    background-color: #222;
+}
+
+
+.circle-icon{   
+    color: #999;
+    font-size: 2.8rem;    
+    transition: color 0.3s;
+}
+
+.circle-btn{
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    border: 3px solid #999;
+    margin: 0.8rem;
+    transition: border-color 0.3s;
+}
+
+
+.footer-btns{
+    font-size: 1.8rem;
+    color: #999;
+    margin: 3rem 1rem;
+    background: transparent;
+    transition: color 0.3s;
+}
+
+
+.footer-para{
+    font-size: 1.7rem;
+    color: #999;
+    margin: 3rem 1rem;
+    background: transparent;
+    font-weight: bold;
+}
+
+
+/* hovers */
+
+
+.footer-btns:hover{
+    color: #666;
+}
+
+
+.header-btn:hover{
+    cursor: pointer;
+    color: #aaa;
+}
+
+.header-btn2:hover{
+    cursor: pointer;
+    top: -5px;
+    box-shadow: 0rem 1.2rem 1.2rem -0.5rem #888;
+}
+
+.view-all-btn:hover{
+    cursor: pointer;
+    top: -5px;
+    box-shadow: 0rem 1.2rem 1.2rem -0.5rem #888;
+}
+
+.main-podcast-btn:hover{
+    opacity: 0.6;
+}
+
+.card-imgs:hover{
+    width: 110%;
+}
+
+.speacial-div-btn:hover{    
+    cursor: pointer;
+    top: -5px;
+    box-shadow: 0rem 1.2rem 1.2rem -0.5rem rgba(34, 34, 34, 0.849);
+}
+
+.input-box-btn:hover{
+    top: -5px;
+    box-shadow: 0rem 2rem 2rem rgba(68, 68, 68, 0.7);
+}
+
+.circle-btn:hover{
+    border-color: #666;
+}
+
+.circle-btn:hover .circle-icon{
+    color: #666;
+}
+
+
+
+
+/* media queries*/
+
+
+
+@media only screen and (max-width:1000px){
+    html{
+        font-size: 0.48rem;
+    }
+    
+    .container{
+        grid-template-rows: 12rem minmax(80vh,min-content) minmax(100vh,min-content) minmax(80vh,min-content) 60vh;    
+    }
+}
+
+
+
+@media only screen and (max-width:850px){
+    html{
+        font-size: 0.45rem;
+    }
+
+    .container{
+        grid-template-rows: 12rem minmax(72vh,min-content) minmax(100vh,min-content) minmax(80vh,min-content) 60vh;    
+    }
+}
+
+
+
+@media only screen and (max-width:750px){
+    .container{
+        grid-template-rows: 12rem minmax(65vh,min-content) minmax(100vh,min-content) minmax(80vh,min-content) 60vh;    
+    }
+
+    .feeds{
+        background-size: auto 100%;
+    }
+}
+
+
+@media only screen and (max-width:650px){
+    .container{
+        grid-template-rows: 12rem minmax(65vh,min-content) minmax(100vh,min-content) minmax(80vh,min-content) 60vh;    
+    }
+
+    .feeds{
+        background-size: auto 100%;
+    }
+
+    .main-view{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .main-img{
+        float: center;
+    }
+
+    .main-podcast-btn{
+        margin-bottom: 6rem;
+    }
+
+    .cards-container2{
+        grid-template-columns: auto;
+        
+    }
+
+    .speacial-card{
+        width: 100%;
+    }
 }
